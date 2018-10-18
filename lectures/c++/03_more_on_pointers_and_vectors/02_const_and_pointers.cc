@@ -34,3 +34,9 @@ void print_sentinel(const T* a, const std::size_t l) {
   for (; a != end; ++a)
     std::cout << *a << std::endl;
 }
+
+
+#read variable from right to left to avoid confusion ( like pc (pointer to int const) and cp ( const pointer to int)
+#sentinel: pointer to first element past array_size
+# a[i] == *(a+i)
+

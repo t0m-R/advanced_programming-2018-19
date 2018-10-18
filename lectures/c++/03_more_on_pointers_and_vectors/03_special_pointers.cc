@@ -30,6 +30,8 @@ int main() {
   bbb = ap;
   pv = nullptr;
   pi2 = 0;  // older codes. gets the nullptr
+//nullptr points to 0x0 
+
 
   // pi = NULL; // please don't do this
 
@@ -62,7 +64,7 @@ int main() {
   else
     std::cout << "different\n";
 
-  int (*fp)(const char*);
+  int (*fp)(const char*); // pointer to a function that returns int and takes a const char* has arg
   fp = func1;
 
   fp("hello");
@@ -94,3 +96,6 @@ int func2(const char* a) {
 void func3(const char* a) {
   std::cout << "3333: " << a << std::endl;
 }
+
+//exam question: difference references and pointers: referencs can nothave null value, other reasons in previous files
+

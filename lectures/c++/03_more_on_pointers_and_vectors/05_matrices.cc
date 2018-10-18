@@ -10,7 +10,7 @@ void print_ma(int* p, int row, int col);  // the only possible solution
 
 int main() {
   int ma[6][5];  // matrix: 6 rows, 5 columns each
-
+//first row loops for performance reason 
   for (int i = 0; i < 6; ++i)
     for (int j = 0; j < 5; ++j)
       ma[i][j] = 10 * i + j;
@@ -51,3 +51,5 @@ void print_ma(int* p, int row, int col) {
     std::cout << std::endl;
   }
 }
+
+

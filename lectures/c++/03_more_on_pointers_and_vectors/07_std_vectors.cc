@@ -9,8 +9,8 @@ template <typename T>
 void print_vector(const std::vector<T>& v, const std::string& s);
 
 int main() {
-  std::vector<int> v0{1, 2, 4};
-  std::vector<int> v1(4, 4);
+  std::vector<int> v0{1, 2, 4}; //vector of 3 elements 
+  std::vector<int> v1(4, 4); //vector of 4 elements, each one equals 4
 
   print_vector(v0, "v0");
   print_vector(v1, "v1");
@@ -40,3 +40,5 @@ void print_vector(const std::vector<T>& v, const std::string& s) {
     std::cout << x << " ";
   std::cout << std::endl;
 }
+
+//std::vector stays in the heap; std::array lives in the stack

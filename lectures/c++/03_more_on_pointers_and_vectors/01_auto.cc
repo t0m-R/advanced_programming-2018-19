@@ -35,3 +35,10 @@ int main() {
   delete[] ps;
   return 0;
 }
+
+
+
+#to check type of variable: create a compile error with it 
+#gcc -E | to see the output of the preprocessor
+
+
