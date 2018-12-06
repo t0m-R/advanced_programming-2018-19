@@ -189,4 +189,9 @@ int main() {
     std::cerr << e.what() << std::endl;
     return 1;
   }
+
 }
+
+// *this SPECIAL POINTER OF AN OBJECT THAT POINT TO THE OBJECT. LIKE SELF IN PYTHON
+
+//MOVE SEMANTICS = NOEXCEPT ( EXAM QUESTION )
